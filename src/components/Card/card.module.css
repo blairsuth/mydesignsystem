@@ -1,0 +1,100 @@
+.card {
+  display: flex;
+  box-shadow: var(--itt-shadow-small);
+  border-radius: var(--itt-radius-md);
+  border: 1px solid var(--surface-400);
+}
+
+.card .body {
+  padding: var(--itt-spacing-lg);
+}
+
+.card h6 {
+  font-family: var(--itt-font-headings);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: var(--itt-spacing-sm) 0px;
+}
+
+.card p {
+  font-family: var(--itt-font-body);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--itt-color-text-body);
+}
+
+.card.vertical {
+  flex-direction: column;
+  width: 300px;
+}
+
+.card.horizontal {
+  align-items: center;
+  flex-direction: row;
+  width: 450px;
+}
+
+.card.horizontal .body {
+  width: 250px;
+}
+
+.image_container {
+  height: 150px;
+  background-position: center center;
+  border-radius: var(--itt-radius-md);
+}
+
+.horizontal .image_container {
+  background-position: center center;
+}
+
+.horizontal .image_container.filled {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 150px;
+}
+
+.horizontal .image_container.regular {
+  border-radius: 50%;
+  margin: var(--itt-spacing-lg);
+  border: 1px solid var(--itt-color-surface-border);
+  aspect-ratio: 1 / 1;
+}
+
+/* TODO filled image isn't full height. Need to fix */
+.vertical .image_container.filled {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.vertical .image_container.regular {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.tag_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag_item {
+  margin: 2px;
+}
+
+.horizontal .button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

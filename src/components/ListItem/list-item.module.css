@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.list_item {
+  padding: 12px 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 317px;
+  height: 44px;
+}
+
+.list_item label {
+  color: var(--itt-color-text-body);
+  font-family: var(--itt-font-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  align-self: center;
+}
+
+.list_item .avatar_container {
+  gap: 12px;
+}

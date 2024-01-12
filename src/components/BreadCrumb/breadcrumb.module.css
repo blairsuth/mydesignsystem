@@ -1,0 +1,56 @@
+.breadcrumb_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--itt-spacing-sm);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumb button {
+  color: var(--itt-color-text-body);
+  font-family: var(--itt-font-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  border: none;
+  background-color: transparent;
+}
+
+.breadcrumb button:hover {
+  color: var(--itt-color-brand-secondary-hover);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  @keyframes radio-change {
+    0% {
+      opacity: 0.1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.breadcrumb svg {
+  margin-left: var(--itt-spacing-lg);
+  margin-right: var(--itt-spacing-lg);
+}
+
+.breadcrumb_container > .breadcrumb:last-child > button {
+  color: var(--itt-color-text-link);
+}
+
+.breadcrumb_container > .breadcrumb:last-child > button:hover {
+  color: var(--itt-color-text-link-hover);
+}
+
+.breadcrumb_container > .breadcrumb:last-child > svg {
+  display: none;
+}

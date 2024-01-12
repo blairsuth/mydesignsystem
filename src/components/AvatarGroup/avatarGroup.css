@@ -1,0 +1,10 @@
+.avatar-group {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.avatar-group > * {
+  position: relative;
+  margin-left: -10px;
+}

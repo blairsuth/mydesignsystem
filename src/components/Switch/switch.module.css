@@ -1,0 +1,89 @@
+.switch_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.switch_container label {
+  margin-left: 12px;
+  color: var(--itt-color-text-body);
+  font-family: var(--itt-font-body);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.switch_container label.disabled {
+  color: var(--itt-color-text-disabled);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--itt-color-surface-border);
+  background-color: var(--itt-color-brand-secondary-lightest);
+  transition: all 500ms ease-in-out;
+  position: relative;
+}
+
+.switch.selected {
+  border-color: var(--itt-color-brand-secondary-default);
+  background-color: var(--itt-color-brand-secondary-default);
+  filter: var(--itt-filter);
+}
+
+.switch.medium {
+  width: 36px;
+  height: 21px;
+  border-radius: 12px;
+}
+
+.dial {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 50%;
+  background-color: var(--itt-color-surface-primary);
+  filter: var(--itt-filter);
+  left: 0px;
+}
+
+.dial.selected {
+  left: auto;
+  right: 0px;
+}
+
+.switch:disabled {
+  border-color: var(--itt-color-surface-border);
+  background-color: var(--itt-color-brand-secondary-disabled);
+  filter: none;
+}
+
+.switch:disabled .dial {
+  background-color: var(--itt-color-brand-secondary-lightest);
+}
+
+.switch.selected:disabled {
+  border-color: var(--itt-color-surface-border);
+  background-color: var(--itt-color-surface-border);
+}
+
+.switch.selected:disabled .dial {
+  background-color: var(--itt-color-surface-secondary);
+}
+
+.switch:hover {
+  cursor: pointer;
+  filter: var(--itt-filter);
+}
+
+.switch:disabled:hover {
+  cursor: auto;
+}
+
+.switch:focus {
+  box-shadow: var(--itt-shadow-focus-ring-light);
+}

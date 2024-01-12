@@ -1,0 +1,34 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.thead {
+  background-color: var(--itt-color-brand-primary-default);
+  font-family: var(--itt-font-body);
+  height: 3rem;
+}
+.th {
+  text-align: left;
+  font-weight: 600;
+  padding-left: var(--itt-spacing-md);
+  color: var(--itt-color-text-body);
+}
+
+.tr {
+  text-align: left;
+  height: 3rem;
+}
+
+.td {
+  text-align: left;
+  font-family: var(--itt-font-body);
+  padding-left: var(--itt-spacing-md);
+  color: var(--itt-color-text-body);
+  font-weight: 600;
+}
+
+.tr:nth-child(2n) {
+  background-color: var(--itt-color-surface-alternating);
+}

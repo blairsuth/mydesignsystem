@@ -1,0 +1,26 @@
+.progress_bar {
+  width: 354px;
+  background-color: var(--itt-color-surface-secondary);
+}
+
+.progress_bar__value {
+  height: 3px;
+  background-color: var(--itt-color-brand-primary-disabled);
+  transition: width 0.25s ease-in-out;
+}
+
+.progress_bar_fill {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.accessible_progress_bar__value {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

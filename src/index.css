@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+  /* Primitives: Use Primitives as the values of Tokens. */
+
+  /* Orange */
+  --orange-500: #e34300;
+  --orange-400: #f06023;
+  --orange-300: #f47e20;
+  --orange-200: #ffc191;
+  --orange-100: #ffdfb6;
+  --orange-gradient: linear-gradient(180deg, #f67a4c 0%, #c9501d 100%, rgba(201, 80, 29, 0) 100%);
+  /* Yellow */
+  --yellow-500: #ecc500;
+  --yellow-400: #ffd600;
+  --yellow-300: #ffe780;
+  --yellow-200: #fff0a9;
+  --yellow-100: #fff9d1;
+
+  /* Red */
+  --red-500: #e30000;
+  --red-400: #ff4a4a;
+  --red-300: #ff9393;
+  --red-200: #ffcccc;
+  --red-100: #fff1f3;
+
+  /* Gray */
+  --gray-900: #000000;
+  --gray-800: #1e1e1d;
+  --gray-700: #4d4d4d;
+  --gray-600: #696969;
+  --gray-500: #878787;
+  --gray-400: #bbbbbb;
+  --gray-300: #e1e1e1;
+  --gray-200: #f6f6f6;
+  --gray-100: #ffffff;
+  --gray-gradient: linear-gradient(180deg, #8f8f8f 0%, #000 100%);
+
+  /* Green */
+  --green-500: #5c9f47;
+  --green-200: #a3d095;
+
+  /* Blue */
+  --blue-500: #175cd3;
+  --blue-400: #94bdeb;
+  --blue-300: #a7c9ef;
+  --blue-200: #c8ddf4;
+  --blue-100: #eff8ff;
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-11: 48px;
+  --spacing-12: 56px;
+  --spacing-13: 64px;
+  --spacing-14: 72px;
+  --spacing-15: 80px;
+  --spacing-16: 88px;
+  --spacing-17: 96px;
+  --spacing-18: 104px;
+
+  /* Tokens */
+
+  /* Brand Colors */
+  --itt-color-brand-primary-hover: var(--orange-500);
+  --itt-color-brand-primary-default: var(--orange-400);
+  --itt-color-brand-primary-light: var(--orange-300);
+  --itt-color-brand-primary-lighter: var(--orange-200);
+  --itt-color-brand-primary-disabled: var(--orange-100);
+  --itt-color-brand-primary-gradient: var(--orange-gradient);
+
+  --itt-color-brand-secondary-hover: var(--gray-900);
+  --itt-color-brand-secondary-default: var(--gray-800);
+  --itt-color-brand-secondary-light: var(--gray-500);
+  --itt-color-brand-secondary-disabled: var(--gray-300);
+  --itt-color-brand-secondary-lightest: var(--gray-200);
+  --itt-color-brand-primary-gradient: var(--gray-gradient);
+
+  --itt-color-brand-tertiary-hover: var(--yellow-500);
+  --itt-color-brand-tertiary-default: var(--yellow-400);
+  --itt-color-brand-tertiary-light: var(--yellow-300);
+  --itt-color-brand-tertiary-lighter: var(--yellow-200);
+  --itt-color-brand-tertiary-disabled: var(--yellow-100);
+
+  /* Text Colors */
+  --itt-color-text-body: var(--gray-800);
+  --itt-color-text-disabled: var(--gray-500);
+  --itt-color-text-headings: var(--gray-700);
+  --itt-color-text-labels: var(--gray-600);
+  --itt-color-text-icons: var(--gray-600);
+  --itt-color-text-placeholder: var(--gray-500);
+  --itt-color-text-inverted: var(--gray-100);
+  --itt-color-text-button: var(--gray-700);
+  --itt-color-text-button-disabled: var(--gray-400);
+  --itt-color-text-link: var(--orange-400);
+  --itt-color-text-link-hover: var(--orange-500);
+
+  /* Surface Colors */
+  --itt-color-surface-primary: var(--gray-100);
+  --itt-color-surface-border: var(--gray-400);
+  --itt-color-surface-secondary: var(--gray-300);
+  --itt-color-surface-alternating: var(--gray-200);
+  --itt-color-surface-primary-hover: var(--gray-200);
+
+  /* Feedback Colors */
+  --itt-color-feedback-error: var(--red-500);
+  --itt-color-feedback-error-disabled: var(--red-200);
+  --itt-color-feedback-success: var(--green-500);
+  --itt-color-feedback-success-disabled: var(--green-200);
+  --itt-color-feedback-warning: var(--yellow-400);
+  --itt-color-feedback-warning-disabled: var(--yellow-200);
+  --itt-color-feedback-info: var(--blue-400);
+  --itt-color-feedback-info-disabled: var(--blue-200);
+
+  /* Spacing */
+  --itt-spacing-none: 0;
+  --itt-spacing-xs: var(--spacing-1);
+  --itt-spacing-sm: var(--spacing-2);
+  --itt-spacing-md: var(--spacing-3);
+  --itt-spacing-lg: var(--spacing-4);
+  --itt-spacing-xl: var(--spacing-8);
+  --itt-spacing-2xl: var(--spacing-12);
+  --itt-spacing-3xl: var(--spacing-16);
+
+  /* Shadows */
+  --itt-shadow-button: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  --itt-shadow-focus-ring-light: 0px 0px 0px 2px var(--orange-100);
+  --itt-shadow-focus-ring-dark: 0px 0px 0px 2px #000;
+  --itt-shadow-focus-ring-primary: 0px 0px 0px 2px var(--orange-100);
+  --itt-shadow-small: 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+  --itt-shadow-medium: 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --itt-shadow-large: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --itt-shadow-xlarge: 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  --itt-shadow-2xlarge: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --itt-shadow-3xlarge: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+  /* Filter */
+  --itt-filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.06))
+    drop-shadow(0px 1px 3px rgba(16, 24, 40, 0.1));
+
+  /* Radius */
+  --itt-radius-sm: 4px;
+  --itt-radius-md: 8px;
+  --itt-radius-lg: 16px;
+  --itt-radius-xl: 32px;
+  --itt-radius-2xl: 64px;
+  --itt-radius-3xl: 128px;
+
+  /* Fonts */
+  --itt-font-headings: Archivo;
+  --itt-font-subheadings: Bai Jamjuree;
+  --itt-font-body: Montserrat;
+  --itt-font-buttons: Montserrat;
+}

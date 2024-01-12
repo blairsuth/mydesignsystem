@@ -1,0 +1,12 @@
+.contact_form_container {
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+label {
+  font-weight: 600;
+  color: var(--itt-color-text-labels);
+}

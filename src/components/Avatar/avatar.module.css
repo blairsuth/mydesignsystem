@@ -1,0 +1,64 @@
+.avatar svg {
+  height: 65%;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-color: var(--itt-color-brand-primary-default);
+  box-shadow: var(--itt-shadow-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.avatar:hover {
+  cursor: pointer;
+  box-shadow: var(--itt-shadow-medium);
+}
+
+.avatar:disabled {
+  cursor: default;
+}
+
+.initials {
+  color: var(--itt-color-text-inverted);
+  font-family: var(--itt-font-headings);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.icon {
+  background-color: var(--itt-color-surface-primary);
+  color: var(--itt-color-text-icons);
+}
+
+.image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.large {
+  width: 48px;
+  height: 48px;
+  font-size: 25px;
+}
+
+.medium {
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+}
+
+.small {
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+}
+
+.xsmall {
+  width: 16px;
+  height: 16px;
+  font-size: 7px;
+}
